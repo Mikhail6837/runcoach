@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10130f">
+    <title>RunCoach — твой план бега</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="app-shell">
+    <aside class="sidebar">
+        <a class="brand" href="#home"><span class="brand-mark">R</span><span>runcoach</span></a>
+        <div class="side-label">ТРЕНИРОВКИ</div>
+        <nav aria-label="Основная навигация">
+            <a class="nav-item active" href="#plan"><span>▦</span> Мой план</a>
+            <a class="nav-item" href="#progress"><span>↗</span> Прогресс</a>
+            <a class="nav-item" href="#polar"><span>⌁</span> Подключить Polar</a>
+            <a class="nav-item" href="#reports"><span>▤</span> Отчёты</a>
+        </nav>
+        <div class="sidebar-bottom"><span class="status-dot"></span>ПРОТОТИП · ЛОКАЛЬНО</div>
+    </aside>
+
+    <main id="home">
+        <header class="topbar"><span>ПОНЕДЕЛЬНИК, 24 НОЯБРЯ</span><button class="avatar" aria-label="Профиль">М</button></header>
+        <section class="intro" id="plan">
+            <div class="eyebrow"><span class="live-dot"></span> ТВОЯ БЕГОВАЯ НЕДЕЛЯ</div>
+            <h1>Привет, спортсмен<span>.</span></h1>
+            <p>Спокойный темп. Последовательность. Результат.</p>
+        </section>
+
+        <section class="stats" aria-label="Итоги недели">
+            <article class="stat-card"><span>ЗАПЛАНИРОВАНО</span><strong>3 <small>тренировки</small></strong><div class="stat-note">на этой неделе</div></article>
+            <article class="stat-card"><span>ОБЩИЙ ОБЪЁМ</span><strong>18 <small>км</small></strong><div class="stat-note">план на неделю</div></article>
+            <article class="stat-card"><span>СЛЕДУЮЩАЯ</span><strong class="next-value">Завтра</strong><div class="stat-note">лёгкий бег · 5 км</div></article>
+        </section>
+
+        <section class="section-heading"><div><div class="eyebrow">НЕДЕЛЯ 1 · БАЗОВАЯ ПОДГОТОВКА</div><h2>Твой план</h2></div><button class="quiet-button" id="week-button">← <span>Эта неделя</span> →</button></section>
+        <section class="workout-list" aria-label="Тренировки недели">
+            <article class="workout"><div class="day"><strong>ВТ</strong><span>25 НОЯ</span></div><div class="run-icon easy">↗</div><div class="workout-info"><strong>Лёгкий бег</strong><span>Комфортный разговорный темп</span></div><div class="distance">5 <small>км</small></div><span class="tag green">ЛЕГКО</span></article>
+            <article class="workout"><div class="day"><strong>ЧТ</strong><span>27 НОЯ</span></div><div class="run-icon tempo">⌁</div><div class="workout-info"><strong>Ровный бег</strong><span>Разминка · основной блок · заминка</span></div><div class="distance">6 <small>км</small></div><span class="tag orange">СРЕДНЕ</span></article>
+            <article class="workout"><div class="day"><strong>ВС</strong><span>30 НОЯ</span></div><div class="run-icon long">↗</div><div class="workout-info"><strong>Длительная</strong><span>Ровно, без ускорений</span></div><div class="distance">7 <small>км</small></div><span class="tag green">ЛЕГКО</span></article>
+        </section>
+        <footer>ПЛАН — ДЕМО · ДАННЫЕ POLAR ПОКА НЕ ПОДКЛЮЧЕНЫ</footer>
+    </main>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
